@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  text-decoration: none;
+  
+}
+
+/*---------- Font.Famylys ----------*/
+/* ABeeeZee font-family: 'ABeeZee', sans-serif;*/
+/* Bree Seryf font-family: 'Bree Serif', serif;*
+
+/* ----------- Body --------------- */
+body {
+  background-color: rgb(34, 30, 30);
+  background-image: url(../img/fondoBody.jpg);
+  background-blend-mode: soft-light;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: "Bree Serif", serif;
+  font-size: 30px;
+  color: whitesmoke;
+  vertical-align: baseline;
+
+}
+
+h2 {
+  font-family: "Bree Serif", serif;
+  font-size: 25px;
+  color: whitesmoke;
+}
+
+h3 {
+  font-family: "Bree Serif", serif;
+  font-size: 20px;
+  color: whitesmoke;
+}
+
+p {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 15px;
+  color: whitesmoke;
+}
+
+a {
+  font-family: "Bree Serif", serif;
+  font-size: 15px;
+  color: whitesmoke;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ----- Efecto lluvia  ingame y recursos-----*/
+
+.particulas {
+  background-color: rgb(184, 184, 31);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  animation: lluvia 5s ease infinite;
+}
+
+.particulas:nth-child(1) {
+  width: 1px;
+  height: 1px;
+  left: 5%;
+  top: 10px;
+  animation-duration: 4s;
+}
+
+.particulas:nth-child(2) {
+  width: 3px;
+  height: 2px;
+  left: 6%;
+  animation-duration: 8s;
+}
+
+.particulas:nth-child(3) {
+  width: 3px;
+  height: 2px;
+  left: 8%;
+  animation-duration: 2s;
+}
+
+.particulas:nth-child(4) {
+  width: 1px;
+  height: 1px;
+  left: 19%;
+  animation-duration: 7s;
+}
+.particulas:nth-child(5) {
+  width: 3px;
+  height: 2px;
+  left: 19%;
+  top: 14%;
+  animation-duration: 3s;
+}
+.particulas:nth-child(6) {
+  width: 3px;
+  height: 2px;
+  left: 8%;
+  animation-duration: 12s;
+}
+.particulas:nth-child(7) {
+  width: 1px;
+  height: 1px;
+  left: 17%;
+  animation-duration: 9s;
+}
+.particulas:nth-child(8) {
+  width: 3px;
+  height: 2px;
+  left: 20%;
+  animation-duration: 15s;
+}
+.particulas:nth-child(9) {
+  width: 1px;
+  height: 1px;
+  left: 23%;
+  animation-duration: 6s;
+}
+.particulas:nth-child(10) {
+  width: 3px;
+  height: 2px;
+  left: 25%;
+  animation-duration: 13s;
+}
+.particulas:nth-child(11) {
+  width: 3px;
+  height: 2px;
+  left: 13%;
+  animation-duration: 11s;
+}
+.particulas:nth-child(12) {
+  width: 3px;
+  height: 2px;
+  left: 12%;
+  animation-duration: 5s;
+}
+.particulas:nth-child(13) {
+  width: 3px;
+  height: 2px;
+  left: 14%;
+  animation-duration: 10s;
+}
+.particulas:nth-child(14) {
+  width: 3px;
+  height: 2px;
+  left: 16%;
+  animation-duration: 14s;
+}
+.particulas:nth-child(15) {
+  width: 3px;
+  height: 2px;
+  left: 18%;
+  animation-duration: 16s;
+}
+
+
+@keyframes lluvia {
+  0% {
+    opacity: 0.2;
+    box-shadow: 0 0 5px 3px rgb(231, 81, 35), 0 0 5px 3px rgb(90, 23, 3);
+    width: 0;
+    height: 0;
+  }
+
+  25% {
+    margin-left: 40px;
+  }
+
+  50% {
+    opacity: 0.5;
+    margin-left: 60px;
+    opacity: 1;
+    box-shadow: 0 0 5px 2px rgb(231, 81, 35), 0 0 5px 3px rgb(90, 23, 3);
+  }
+
+  75% {
+    margin-left: 80px;
+  }
+
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+
+
+}

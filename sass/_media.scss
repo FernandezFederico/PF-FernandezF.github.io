@@ -1,0 +1,263 @@
+@media (max-width: 1020px) {
+
+  /*-----Header y Footer -----*/
+
+  .header {
+    grid-template-rows: auto;
+    grid-template-columns: none;
+    padding: 5px;
+
+    .headerLogo {
+      justify-content: center;
+    }
+
+    .headerNav {
+      .navUl {
+        @include flexible(flex, row, wrap, space-around, center);
+      }
+    }
+  }
+
+  .footer {
+    
+    padding: 0 10px;
+  }
+
+  /*-----Index-----*/
+
+  .main {
+    @include flexible(flex, column, nowrap, center, center);
+    padding: 0 10px;
+
+    .streamingText {
+      width: 100%;
+      min-height: 30px;
+      margin-bottom: 0;
+    }
+
+    .streamig {
+      margin-bottom: 0;
+    }
+  }
+
+  .quienesSomos {
+    @include flexible(flex, column, nowrap, center, center);
+    padding: 0 10px;
+
+    .titular {
+      width: 100%;
+      min-height: 30px;
+      margin-bottom: 0;
+    }
+
+    .img {
+      margin-bottom: 0;
+    }
+  }
+
+  .inGame {
+    @include flexible(flex, column, nowrap, center, center);
+    padding: 0 10px;
+
+    .inGameTitular {
+      width: 100%;
+      min-height: 30px;
+      margin-bottom: 0;
+    }
+
+    .ingameImg {
+      margin-bottom: 0;
+    }
+  }
+
+  .recursos {
+    @include flexible(flex, column, nowrap, center, center);
+    padding: 0 10px;
+
+    .recursosTitular {
+      width: 100%;
+      min-height: 30px;
+      margin-bottom: 0;
+    }
+
+    .recursosImg {
+      margin-bottom: 0;
+    }
+  }
+
+  .partners {
+    @include bg-baner;
+    @include flexible(flex, row, nowrap, space-around, center);
+    padding: 0 10px;
+
+    a {
+      max-width: 150px;
+    }
+  }
+
+
+  /*-----Pages Quienes Somos-----*/
+  .quienesText {
+    padding: 40px 10px 40px 10px;
+  }
+
+  .quienesFundadores {
+    @include bg-baner;
+    width: 100%;
+    min-height: 200px;
+    padding: 40px 10px 0 10px;
+
+    .fundadores {
+      @include flexible(flex, column, wrap, cennter, center);
+    }
+
+  }
+
+  /*-----Pages In-game-----*/
+
+  .ingame {
+    padding: 40px 10px;
+
+    .gameVideos {
+      width: 100%;
+      min-height: 200px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  /*-----Pages Recursos-----*/
+
+  .recursoImg {
+    width: 100%;
+    min-height: 300px;
+    margin-top: 40px;
+    padding: 0 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+
+}
+
+@media (min-width: 1020px) and (max-width: 1200px) {
+
+  /*-----Index-----*/
+  .header {
+    grid-template-rows: auto;
+    grid-template-columns: none;
+    padding: 5px;
+
+    .headerLogo {
+      justify-content: center;
+    }
+  }
+
+  .main {
+    @include flexible(flex, column, nowrap, center, center);
+    padding: 0 90px;
+
+    .streamingText {
+      width: 100%;
+      min-height: 30px;
+      margin-bottom: 0;
+    }
+
+    .streamig {
+      margin-bottom: 0;
+    }
+  }
+
+  .quienesSomos {
+    @include flexible(flex, row, nowrap, center, flex-start);
+    padding: 0 50px;
+
+    .titular {
+      width: 100%;
+      min-height: 30px;
+      margin-bottom: 0;
+    }
+
+    .img {
+      margin-bottom: 0;
+    }
+  }
+
+  .inGame {
+    @include flexible(flex, row, nowrap, center, flex-start);
+    padding: 0 50px;
+
+    .inGameTitular {
+      width: 100%;
+      min-height: 30px;
+      margin-bottom: 0;
+    }
+
+    .ingameImg {
+      margin-bottom: 0;
+    }
+  }
+
+  .recursos {
+    @include flexible(flex, column, nowrap, center, center);
+    padding: 0 50px;
+
+    .recursosTitular {
+      width: 100%;
+      min-height: 30px;
+      margin-bottom: 0;
+    }
+
+    .recursosImg {
+      margin-bottom: 0;
+    }
+  }
+
+  .partners {
+    @include bg-baner;
+    @include flexible(flex, row, nowrap, space-around, center);
+    padding: 0 50px;
+
+    a {
+      max-width: 150px;
+    }
+  }
+
+  .footer {
+    @include flexible(flex, column, rap, center, center);
+    padding: 0 50px;
+  }
+
+  /*-----Pages Quienes Somos-----*/
+  .quienesText {
+    padding: 40px 50px 40px 50px;
+  }
+
+  .quienesFundadores {
+    @include bg-baner;
+    width: 100%;
+    min-height: 200px;
+    padding: 40px 50px 0 50px;
+  }
+
+  /*-----Pages In-game-----*/
+
+  .ingame {
+    padding: 40px 50px;
+
+    .gameVideos {
+      width: 100%;
+      min-height: 200px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}

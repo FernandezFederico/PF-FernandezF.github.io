@@ -1,0 +1,201 @@
+.main {
+  background: linear-gradient(rgba(5, 7, 12, 0.65), rgba(5, 7, 12, 0.65)),
+    url(../img/fondoBody.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 300px;
+  padding: 0 150px;
+
+  @include flexible(flex, row-reverse, nowrap, center, flex-start);
+
+  .streamingText {
+    width: 50%;
+    min-height: 300px;
+    margin: 30px;
+
+    h2 {
+      margin: 0px 10px;
+    }
+
+    p {
+      margin: 10px;
+    }
+  }
+
+  .streamig {
+    width: 100%;
+    min-height: 300px;
+    margin: 30px;
+
+    .iframConteiner {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+
+      .iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.quienesSomos {
+  width: 100%;
+  min-height: 50x;
+  padding: 0 150px;
+
+  @include flexible(flex, row-reverse, nowrap, center, flex-start);
+
+  .titular {
+    width: 100%;
+    min-height: 300px;
+    margin: 30px;
+
+    .titularTitulo {
+      width: 100%;
+      min-height: 20px;
+      margin: 20px;
+
+      @include flexible(flex, row, nowrap, space-around, center);
+
+      a {
+        @include boton;
+      }
+
+      a:hover {
+        @include boton-hover;
+      }
+    }
+
+    p {
+      margin: 10px;
+    }
+  }
+
+  .img {
+    width: 100%;
+    min-height: 300px;
+    margin: 30px;
+
+    img {
+      @include imgconfig;
+    }
+  }
+}
+
+.inGame {
+  @include bg-baner;
+
+  @include flexible(flex, row, nowrap, center, flex-start);
+
+  .inGameTitular {
+    width: 100%;
+    min-height: 300px;
+    margin: 30px;
+
+    .inGameText {
+      min-height: 20px;
+      margin-bottom: 20px;
+
+      @include flexible(flex, row, nowrap, space-around, center);
+
+      a {
+        @include boton;
+      }
+      a:hover {
+        @include boton-hover;
+      }
+    }
+
+    p {
+      margin: 10px;
+    }
+  }
+
+  .ingameImg {
+    width: 100%;
+    min-height: 300px;
+    margin: 30px;
+
+    img {
+      @include imgconfig;
+    }
+  }
+}
+
+.recursos {
+  width: 100%;
+  min-height: 150px;
+  padding: 0 150px;
+
+  @include flexible(flex, row-reverse, nowrap, center, center);
+
+  .recursosTitular {
+    width: 50%;
+    min-height: 200px;
+    margin: 30px;
+
+    .recursosText {
+      min-height: 20px;
+      margin-bottom: 20px;
+
+      @include flexible(flex, row, nowrap, space-around, center);
+
+      a {
+        @include boton;
+      }
+      a:hover {
+        @include boton-hover;
+      }
+    }
+
+    p {
+      margin: 10px;
+    }
+  }
+
+  .recursosImg {
+    width: 100%;
+    min-height: 200px;
+
+    @include flexible(flex, row, rap, space-between, flex-start);
+
+    .recursosConteiner {
+      max-width: 200px;
+      margin: 5px;
+
+      img {
+        @include imgconfig;
+      }
+    }
+  }
+}
+
+.partners {
+  @include bg-baner;
+
+  @include flexible(flex, row, nowrap, space-between, center);
+  gap: 15px;
+
+  a {
+    max-width: 150px;
+    margin-top: 40px;
+
+    img {
+      @include imgconfig;
+    }
+  }
+  a:hover {
+    cursor: pointer;
+    transform: translateY(-10px) scale(1.1);
+    transition: 1s;
+
+  }
+}

@@ -1,0 +1,69 @@
+.footer {
+  @include bg-headFoot;
+
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+
+  .footerLogo {
+    width: 100%;
+    min-height: 50px;
+
+    @include flexible(flex, column, nowrap, center, center);
+
+    img {
+      height: 30px;
+      border-radius: 50%;
+      margin: 10px 0;
+    }
+
+    p {
+      color: rgb(75, 74, 74);
+    }
+  }
+  .footerNav {
+    width: 100%;
+    min-height: 50px;
+
+    @include flexible(flex, row, nowrap, center, center);
+
+    ul {
+      width: 100%;
+
+      @include flexible(flex, row, wrap, center, center);
+
+      li {
+        margin: 5px;
+
+        a {
+          padding: 10px;
+        }
+
+        a:hover {
+          text-decoration: underline;
+          color: rgb(175, 38, 38);
+        }
+      }
+    }
+  }
+  .redes {
+    
+    width: 100%;
+    min-height: 50px;
+
+    @include flexible(flex, row, nowrap, center, center);
+
+
+
+
+    a {
+      margin: 10px;
+
+      img {
+        max-height: 30px;
+        border-radius: 10%;
+      }
+    }
+
+    
+  }
+}

@@ -1,0 +1,46 @@
+.header {
+  @include bg-headFoot;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+
+  .headerLogo {
+    width: 100%;
+    min-height: 50px;
+
+    @include flexible(flex, row, nowrap, lefth, center);
+
+    .headerImg {
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    h1 {
+      padding-left: 20px;
+    }
+  }
+
+  .headerNav {
+    width: 100%;
+    min-height: 50px;
+
+    @include flexible(flex, row, wrap, center, center);
+
+    .navUl {
+      width: 100%;
+
+      @include flexible(flex, row, wrap, right, center);
+
+      li {
+        padding: 10px 20px;
+
+        a:hover {
+          text-decoration: underline;
+          color: rgb(175, 38, 38);
+        }
+      }
+    }
+  }
+}
