@@ -2,6 +2,6 @@
 
 Proyecto final de Desarrollo Web. Se trbajo en un sitio web que se utilizará para una hermandad real del juego Word of Warcraft de LATAM.
 
-El trabajo se basó en lo visto en el curso HTML, CSS. Uso de Boostrap y SASS.
+El trabajo se basó en lo visto en el curso HTML, CSS. Uso de Bootstrap y SASS.
 Se penso para que se pueda utilizar como página real de la hermandad en el futuro.
 Se realizó un análisis de las páginas existentes de Echo y Liquid para usar de referencia: https://echoesports.gg/home https://liquidguild.gg/
